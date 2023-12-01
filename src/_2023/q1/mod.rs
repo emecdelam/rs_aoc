@@ -25,18 +25,12 @@ pub fn main() {
         sum += f_res;
     }
     println!("First part sum : {}",sum);
-    let mut converter:HashMap<&str,&str> = HashMap::new();
+    let converter: HashMap<&str, &str> = [("zero", "0"),("one", "1"),("two", "2"),("three", "3"),("four", "4"),("five", "5"),("six", "6"),("seven", "7"),("eight", "8"),("nine", "9"),]
+        .iter()
+        .cloned()
+        .collect();
     sum = 0;
-    converter.insert("zero", "0");
-    converter.insert("one", "1");
-    converter.insert("two", "2");
-    converter.insert("three", "3");
-    converter.insert("four", "4");
-    converter.insert("five", "5");
-    converter.insert("six", "6");
-    converter.insert("seven", "7");
-    converter.insert("eight", "8");
-    converter.insert("nine", "9");
+
     for i in splitted {
         let chars = i.chars();
         let mut checker1 = String::new();
