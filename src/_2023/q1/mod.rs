@@ -1,7 +1,5 @@
 use crate::utils;
 use std::collections::HashMap;
-use std::ptr::null;
-
 pub fn main() {
     let contents = utils::read_input("_2023\\q1");
     let splitted = contents.split("\n");
