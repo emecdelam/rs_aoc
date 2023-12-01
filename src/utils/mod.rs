@@ -1,6 +1,5 @@
 use std::env;
 use std::fs;
-use std::path::{Path, PathBuf};
 
 pub fn read_input(path: &str) -> String {
     let current_dir = env::current_dir().expect("Failed to get current directory");
