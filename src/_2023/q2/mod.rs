@@ -4,7 +4,6 @@ use crate::utils;
 
 pub fn main() {
     let contents = utils::read_input("_2023\\q2");
-    println!("{}",contents);
     let parts:Vec<&str> = contents.split("\n").collect();
     let mut sum = 0;
     for (index, part) in parts.clone().iter().enumerate() {
@@ -42,7 +41,6 @@ pub fn main() {
                 min_green = comparator(min_green, green_quantity)
             }
         }
-        println!("g:{}, r:{}, b:{}",min_green,min_red,min_blue);
         sum2 += min_blue * min_green * min_red
         
     }
