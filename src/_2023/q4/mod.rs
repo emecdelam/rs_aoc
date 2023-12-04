@@ -112,8 +112,8 @@ fn print_hashmap(hashmap: &HashMap<i32, i32>) {
 }
 fn count_hashmap(hashmap: &HashMap<i32, i32>) -> i32{
     let mut sum:i32 = 0;
-    for (key,value) in hashmap{
-        sum+= value;
+    for value in hashmap{
+        sum+= value.1;
     }
     return sum;
 }
